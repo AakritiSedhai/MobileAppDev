@@ -2,6 +2,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:loader_overlay/loader_overlay.dart';
+import 'package:n_baz/screens/account/account_screen.dart';
 import 'package:n_baz/screens/auth/forget_password_screen.dart';
 import 'package:n_baz/screens/auth/login_screen.dart';
 import 'package:n_baz/screens/auth/register_screen.dart';
@@ -24,6 +25,7 @@ import 'firebase_options.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(
+    name: 'MobileApplication',
 
     options: DefaultFirebaseOptions.currentPlatform,
 
@@ -85,6 +87,7 @@ class MyApp extends StatelessWidget {
                 "/single-product": (BuildContext context)=>SingleProductScreen(),
                 "/single-category": (BuildContext context)=>SingleCategoryScreen(),
                 "/my-products": (BuildContext context)=>MyProductScreen(),
+
               },
             );
           }

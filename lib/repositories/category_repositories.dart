@@ -43,11 +43,11 @@ class CategoryRepository{
 
   List<CategoryModel> makeCategory(){
       return [
-        CategoryModel(categoryName: "Mobile Phones and Accessories", status: "active", imageUrl: "https://reviews.com.np/uploads/article/top-10-phones-under-30k-in-nepal-2020/top-10-phones-under-30k-in-nepal-2020.jpeg"),
-        CategoryModel(categoryName: "Automobile", status: "active", imageUrl: "https://i2-prod.dailyrecord.co.uk/incoming/article25217715.ece/ALTERNATES/s615/0_Daily-Record-Road-Record.jpg"),
-        CategoryModel(categoryName: "Apparel", status: "active", imageUrl: "https://www.techprevue.com/wp-content/uploads/2016/05/online-apparel-business.jpg"),
-        CategoryModel(categoryName: "Computers and Peripherals", status: "active", imageUrl: "https://i2.wp.com/d3d2ir91ztzaym.cloudfront.net/uploads/2020/07/computer-peripherals.jpeg"),
-        CategoryModel(categoryName: "Music Instruments", status: "active", imageUrl: "https://img.texasmonthly.com/2013/04/ESSENTIALS_680X382.jpg"),
+        CategoryModel(categoryName: "Facewash", status: "active", imageUrl: "https://m.media-amazon.com/images/I/51aIyNt4ypL.jpg"),
+        CategoryModel(categoryName: "Moisturizer", status: "active", imageUrl: "https://www.mamaearth.sg/wp-content/uploads/2022/03/tea-tree-oil-moisturizer-with-box-_-ingredients1.jpg"),
+        CategoryModel(categoryName: "Serums", status: "active", imageUrl: "https://www.dermalogica.com.au/cdn/shop/products/dermalogica-facial-oils-and-serums-biolumin-c-serum-30340501995687.jpg?v=1633479062"),
+        CategoryModel(categoryName: "Sunscreen", status: "active", imageUrl: "https://images.squarespace-cdn.com/content/v1/5e2608e21195f14156e7cece/1632334507502-GL3ETZXJRARF44LUPL4D/61RVZPlzX5L._SL1500_.jpg"),
+        CategoryModel(categoryName: "Toners", status: "active", imageUrl: "https://paulaschoice.sg/cdn/shop/products/SKU1350.jpg?v=1668064896"),
       ];
   }
 

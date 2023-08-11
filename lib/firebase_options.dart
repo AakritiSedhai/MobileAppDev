@@ -17,10 +17,7 @@ import 'package:flutter/foundation.dart'
 class DefaultFirebaseOptions {
   static FirebaseOptions get currentPlatform {
     if (kIsWeb) {
-      throw UnsupportedError(
-        'DefaultFirebaseOptions have not been configured for web - '
-        'you can reconfigure this by running the FlutterFire CLI again.',
-      );
+      return web;
     }
     switch (defaultTargetPlatform) {
       case TargetPlatform.android:
@@ -28,10 +25,7 @@ class DefaultFirebaseOptions {
       case TargetPlatform.iOS:
         return ios;
       case TargetPlatform.macOS:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for macos - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
-        );
+        return macos;
       case TargetPlatform.windows:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for windows - '
@@ -49,23 +43,40 @@ class DefaultFirebaseOptions {
     }
   }
 
+  static const FirebaseOptions web = FirebaseOptions(
+    apiKey: 'AIzaSyCP4kC2GFhP-ZKNGXfeQx-cFL_v5kMpSr0',
+    appId: '1:780237506782:web:1cc18ba21d8297013f9a4f',
+    messagingSenderId: '780237506782',
+    projectId: 'mobileapplication-e7a77',
+    authDomain: 'mobileapplication-e7a77.firebaseapp.com',
+    storageBucket: 'mobileapplication-e7a77.appspot.com',
+  );
+
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyBqrRVnjdRIrQ-ZzZaZXBpGVEDqP77W0mI',
-    appId: '1:862963623225:android:d8df8214a5d5cd8770b4e8',
-    messagingSenderId: '862963623225',
-    projectId: 'albert-softwarica-test-1001',
-    databaseURL: 'https://albert-softwarica-test-1001-default-rtdb.firebaseio.com',
-    storageBucket: 'albert-softwarica-test-1001.appspot.com',
+    apiKey: 'AIzaSyBoLW7tbbbvXf5mmmWZ68-VnV3Or9WOu7s',
+    appId: '1:780237506782:android:34ed5aa576ce74023f9a4f',
+    messagingSenderId: '780237506782',
+    projectId: 'mobileapplication-e7a77',
+    storageBucket: 'mobileapplication-e7a77.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyCnI5OOrXH1owBqoFLNHUeWw9RI_TDjv_o',
-    appId: '1:862963623225:ios:59e69aa52ec518e570b4e8',
-    messagingSenderId: '862963623225',
-    projectId: 'albert-softwarica-test-1001',
-    databaseURL: 'https://albert-softwarica-test-1001-default-rtdb.firebaseio.com',
-    storageBucket: 'albert-softwarica-test-1001.appspot.com',
-    iosClientId: '862963623225-s4ld8jqv257pntgoibst6dl9gp292jco.apps.googleusercontent.com',
+    apiKey: 'AIzaSyAxb6yDHXH2ExwhpUZiE4hRcZ5HWb-nuH4',
+    appId: '1:780237506782:ios:a30c238d3ff2126a3f9a4f',
+    messagingSenderId: '780237506782',
+    projectId: 'mobileapplication-e7a77',
+    storageBucket: 'mobileapplication-e7a77.appspot.com',
+    iosClientId: '780237506782-u23fh4cpcdrm96b2egho6f4d3akbpiec.apps.googleusercontent.com',
+    iosBundleId: 'com.example.nBaz',
+  );
+
+  static const FirebaseOptions macos = FirebaseOptions(
+    apiKey: 'AIzaSyAxb6yDHXH2ExwhpUZiE4hRcZ5HWb-nuH4',
+    appId: '1:780237506782:ios:a30c238d3ff2126a3f9a4f',
+    messagingSenderId: '780237506782',
+    projectId: 'mobileapplication-e7a77',
+    storageBucket: 'mobileapplication-e7a77.appspot.com',
+    iosClientId: '780237506782-u23fh4cpcdrm96b2egho6f4d3akbpiec.apps.googleusercontent.com',
     iosBundleId: 'com.example.nBaz',
   );
 }

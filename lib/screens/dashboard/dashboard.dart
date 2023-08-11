@@ -63,9 +63,9 @@ class _DashboardScreenState extends State<DashboardScreen> {
         backgroundColor: Colors.white,
         elevation: 0,
         currentIndex: selectedIndex,
-        selectedItemColor: Color(0xFFF1D4B5), // Change selected item color to your desired color
+        selectedItemColor: Color(0xFFF1D4B5),
         unselectedItemColor: Colors.grey,
-        selectedLabelStyle: TextStyle(color: Color(0xFFF8EDE1)), // Change selected label color
+        selectedLabelStyle: TextStyle(color: Color(0xFFF8EDE1)),
         unselectedLabelStyle: TextStyle(color: Colors.grey),
         type: BottomNavigationBarType.fixed,
         onTap: _itemTapped,
