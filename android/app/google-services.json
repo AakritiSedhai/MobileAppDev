@@ -7,43 +7,7 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:780237506782:android:2add25799bdd13a33f9a4f",
-        "android_client_info": {
-          "package_name": "com.example.ez_text"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "780237506782-i5453gpvh65piud82sqsfbav5vn3qbgn.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyBoLW7tbbbvXf5mmmWZ68-VnV3Or9WOu7s"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "780237506782-i5453gpvh65piud82sqsfbav5vn3qbgn.apps.googleusercontent.com",
-              "client_type": 3
-            },
-            {
-              "client_id": "780237506782-l64t7vtipvnki5sg432quhfnt88j1bd9.apps.googleusercontent.com",
-              "client_type": 2,
-              "ios_info": {
-                "bundle_id": "com.example.ezText"
-              }
-            }
-          ]
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:780237506782:android:34ed5aa576ce74023f9a4f",
+        "mobilesdk_app_id": "1:780237506782:android:ecde412ad450c26f3f9a4f",
         "android_client_info": {
           "package_name": "com.example.n_baz"
         }

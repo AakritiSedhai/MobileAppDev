@@ -58,14 +58,14 @@ class _HomeScreenState extends State<HomeScreen> {
                         children: [
                           CarouselSlider(
                             items: [
-                              Image.asset("assets/images/banner1.jpg"),
-                              Image.asset("assets/images/banner2.jpg"),
+                              Image.asset("assets/images/banner1.jpg",width: double.infinity),
+                              Image.asset("assets/images/banner2.jpg",width: double.infinity),
                             ],
                             options: CarouselOptions(
                               autoPlay: true,
                               aspectRatio: 16 / 9,
                               enlargeCenterPage: true,
-                              viewportFraction: 0.9,
+                              viewportFraction: 1.0,
                             ),
                           ),
                           SizedBox(height: 20),
@@ -79,14 +79,7 @@ class _HomeScreenState extends State<HomeScreen> {
                               ),
                             ),
                           ),
-                          SizedBox(height: 20),
-                          Container(
-                            margin: EdgeInsets.symmetric(horizontal: 10),
-                            child: Text(
-                              "Products",
-                              style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
-                            ),
-                          ),
+
                           Container(
                             margin: EdgeInsets.symmetric(horizontal: 10),
                             child: GridView.count(
@@ -96,9 +89,7 @@ class _HomeScreenState extends State<HomeScreen> {
                               physics: NeverScrollableScrollPhysics(),
                               shrinkWrap: true,
                               crossAxisCount: 2,
-                              children: [
-                                ...productVM.products.map((e) => ProductCard(e))
-                              ],
+
                             ),
                           ),
                         ],
@@ -227,64 +218,7 @@ class _HomeScreenState extends State<HomeScreen> {
     );
   }
 
-  Widget ProductCard(ProductModel e) {
-    return InkWell(
-      onTap: () {
-        Navigator.of(context).pushNamed("/single-product", arguments: e.id);
-      },
-      child: Container(
-        width: 200,
-        padding: EdgeInsets.all(10),
-        decoration: BoxDecoration(
-          color: Colors.white,
-          borderRadius: BorderRadius.circular(10),
-          boxShadow: [
-            BoxShadow(
-              color: Colors.grey.withOpacity(0.3),
-              spreadRadius: 2,
-              blurRadius: 7,
-              offset: Offset(0, 3), // Shadow offset
-            ),
-          ],
-        ),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: [
-            ClipRRect(
-              borderRadius: BorderRadius.circular(10),
-              child: Image.network(
-                e.imageUrl.toString(),
-                height: 150,
-                width: double.infinity,
-                fit: BoxFit.cover,
-                errorBuilder: (BuildContext context, Object exception, StackTrace? stackTrace) {
-                  // Display a placeholder image in case of loading errors
-                  return Image.asset(
-                    'assets/images/logo.png', // Provide the path to your placeholder image
-                    height: 150,
-                    width: double.infinity,
-                    fit: BoxFit.cover,
-                  );
-                },
-              ),
-            ),
-            SizedBox(height: 10),
-            Text(
-              e.productName.toString(),
-              style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
-              textAlign: TextAlign.center,
-              maxLines: 2, // Limit text to two lines
-            ),
-            SizedBox(height: 5),
-            Text(
-              "Rs. " + e.productPrice.toString(),
-              style: TextStyle(fontSize: 14, color: Colors.green),
-            ),
-          ],
-        ),
-      ),
-    );
-  }
+
 }
 
 
