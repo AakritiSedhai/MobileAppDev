@@ -44,7 +44,7 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyCP4kC2GFhP-ZKNGXfeQx-cFL_v5kMpSr0',
+    apiKey: 'AIzaSyBoLW7tbbbvXf5mmmWZ68-VnV3Or9WOu7s',
     appId: '1:780237506782:web:1cc18ba21d8297013f9a4f',
     messagingSenderId: '780237506782',
     projectId: 'mobileapplication-e7a77',
@@ -54,14 +54,14 @@ class DefaultFirebaseOptions {
 
   static const FirebaseOptions android = FirebaseOptions(
     apiKey: 'AIzaSyBoLW7tbbbvXf5mmmWZ68-VnV3Or9WOu7s',
-    appId: '1:780237506782:android:34ed5aa576ce74023f9a4f',
+    appId: '1:780237506782:android:2add25799bdd13a33f9a4f',
     messagingSenderId: '780237506782',
     projectId: 'mobileapplication-e7a77',
     storageBucket: 'mobileapplication-e7a77.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyAxb6yDHXH2ExwhpUZiE4hRcZ5HWb-nuH4',
+    apiKey: 'AIzaSyBoLW7tbbbvXf5mmmWZ68-VnV3Or9WOu7s',
     appId: '1:780237506782:ios:a30c238d3ff2126a3f9a4f',
     messagingSenderId: '780237506782',
     projectId: 'mobileapplication-e7a77',
@@ -71,7 +71,7 @@ class DefaultFirebaseOptions {
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyAxb6yDHXH2ExwhpUZiE4hRcZ5HWb-nuH4',
+    apiKey: 'AIzaSyBoLW7tbbbvXf5mmmWZ68-VnV3Or9WOu7s',
     appId: '1:780237506782:ios:a30c238d3ff2126a3f9a4f',
     messagingSenderId: '780237506782',
     projectId: 'mobileapplication-e7a77',

@@ -1,12 +1,12 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:n_baz/screens/account/account_screen.dart';
-import 'package:n_baz/screens/cart/cart_screen.dart';
-import 'package:n_baz/screens/home/home_screen.dart';
 import 'package:provider/provider.dart';
 
 import '../../viewmodels/global_ui_viewmodel.dart';
+import '../account/account_screen.dart';
+import '../cart/cart_screen.dart';
 import '../favorite/favorite_screen.dart';
+import '../home/home_screen.dart';
 
 class DashboardScreen extends StatefulWidget {
   const DashboardScreen({Key? key}) : super(key: key);

@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
-import 'package:n_baz/models/product_model.dart';
-import 'package:n_baz/repositories/product_repositories.dart';
-import 'package:n_baz/services/file_upload.dart';
-import 'package:n_baz/viewmodels/category_viewmodel.dart';
+
 import 'package:provider/provider.dart';
 
+import '../../models/product_model.dart';
+import '../../services/file_upload.dart';
 import '../../viewmodels/auth_viewmodel.dart';
+import '../../viewmodels/category_viewmodel.dart';
 import '../../viewmodels/global_ui_viewmodel.dart';
 
 class AddProductScreen extends StatefulWidget {

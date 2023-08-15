@@ -1,8 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:n_baz/models/user_model.dart';
+
 import 'package:provider/provider.dart';
 
+import '../../models/user_model.dart';
 import '../../services/local_notification_service.dart';
 import '../../viewmodels/auth_viewmodel.dart';
 import '../../viewmodels/global_ui_viewmodel.dart';
@@ -285,16 +286,16 @@ class _RegisterScreenState extends State<RegisterScreen> {
                           shape: MaterialStateProperty.all<RoundedRectangleBorder>(
                               RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(20),
-                                  side: BorderSide(color: Colors.blue)
+                                  side: BorderSide(color: Colors.orange.shade200)
                               )
                           ),
                           padding: MaterialStateProperty.all<EdgeInsets>(EdgeInsets.symmetric(vertical: 20)),
                         ),
                         onPressed: (){
                             register();
-                        }, child: Text("Sign Up", style: TextStyle(
+                        }, child: Text("Sign Up",  style: TextStyle(
                         fontSize: 20
-                    ),)),
+                    ),),),
                   ),
                   SizedBox(height: 20,),
                   Row(
@@ -307,7 +308,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                         onTap: (){
                           Navigator.of(context).pop();
                         },
-                          child: Text("Sign in", style: TextStyle(color: Colors.blue),))
+                          child: Text("Sign in", style: TextStyle(color: Colors.orange.shade200),))
                     ],
                   ),
 

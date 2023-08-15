@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:n_baz/viewmodels/auth_viewmodel.dart';
+
 import 'package:provider/provider.dart';
 
 import '../../models/cart_model.dart';
 import '../../repositories/cart_repositories.dart';
+import '../../viewmodels/auth_viewmodel.dart';
 import '../../viewmodels/global_ui_viewmodel.dart';
 
 class CartScreen extends StatefulWidget {

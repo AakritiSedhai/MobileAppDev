@@ -1,15 +1,15 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:carousel_slider/carousel_slider.dart'; // Import the carousel_slider package
+import 'package:carousel_slider/carousel_slider.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:n_baz/models/category_model.dart';
-import 'package:n_baz/models/product_model.dart';
-import 'package:n_baz/viewmodels/auth_viewmodel.dart';
-import 'package:n_baz/viewmodels/category_viewmodel.dart';
-import 'package:n_baz/viewmodels/product_viewmodel.dart';
 import 'package:provider/provider.dart';
 
+import '../../models/category_model.dart';
+import '../../models/product_model.dart';
+import '../../viewmodels/auth_viewmodel.dart';
+import '../../viewmodels/category_viewmodel.dart';
 import '../../viewmodels/global_ui_viewmodel.dart';
+import '../../viewmodels/product_viewmodel.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -56,12 +56,10 @@ class _HomeScreenState extends State<HomeScreen> {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          // Use the CarouselSlider
                           CarouselSlider(
                             items: [
                               Image.asset("assets/images/banner1.jpg"),
                               Image.asset("assets/images/banner2.jpg"),
-                              // Add more images as needed
                             ],
                             options: CarouselOptions(
                               autoPlay: true,

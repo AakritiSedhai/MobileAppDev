@@ -17,11 +17,11 @@ class CategoryRepository{
     try {
       var data = await categoryRef.get();
       bool hasData = data.docs.isNotEmpty;
-      if(!hasData){
-        makeCategory().forEach((element) async {
-          await categoryRef.add(element);
-        });
-      }
+      // if(!hasData){
+      //   makeCategory().forEach((element) async {
+      //     await categoryRef.add(element);
+      //   });
+      // }
       final response = await categoryRef.get();
       var category = response.docs;
       return category;
